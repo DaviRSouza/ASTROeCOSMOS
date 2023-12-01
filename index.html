@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Astro&Cosmo</title>
+  <link rel="shortcut icon" href="img/tittleicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    @font-face {
+      font-family: zelda;
+      src: url(fonts/Zelda/ZELDA\ Regular.otf);
+    }
+    @font-face {
+      font-family: quincy;
+      src: url(fonts/Quincy/Fontspring-DEMO-quincycf-text.otf);
+    }
+
+    .menu {
+      display: inline-block;
+      margin: 0px 35px;
+    }
+
+     .menuliaa{
+      font-size: 17px;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     }
+    .menulia{
+      font-size: 17px;
+      text-decoration: none;
+      color: rgb(161, 161, 161);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    footer{
+      text-align: center;
+      align-items: center;
+    }
+
+    footer .menu {
+      margin: 0px 10px;
+    }
+
+    footer .menulia{
+      font-size: 17px;
+    }
+  
+    header{ 
+      background-color: #020202;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    h1 {
+      font-family: zelda;
+    }
+  
+    a:hover, a.active {
+  color: rgb(99, 99, 99);
+    }
+
+    p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h2, h5 {
+      font-family: quincy;
+    }
+  </style>
+  <script>
+
+
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Astro&Cosmo</h1>
+
+  <nav>
+    <div>
+      <ul class="menu">
+        <li class="menu">
+          <a class="menuliaa" href="#">James Webb</a>
+        </li>
+        <li class="menu">
+          <a class="menulia" href="#">Curiosidades</a>
+        </li>
+        <li class="menu">
+          <a class="menulia" href="#">Galaxias</a> 
+        </li>
+        <li class="menu">
+          <a class="menulia" href="#">Sobre nós</a>
+        </li>
+        <li class="menu">
+          <a class="menulia" href="#">Contato</a>
+        </li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-sm-4" >
+        <h2>James webb</h2>
+        <h5>Foto</h5>
+      <img src="img/Jamesweb2.jpg" width="400px" height="400px">
+        <p>O Telescópio Espacial James Webb é o maior e mais poderoso telescópio espacial já construído. Isso permitirá que os cientistas vejam como era o nosso universo cerca de 200 milhões de anos após o Big Bang. O telescópio será capaz de capturar imagens de algumas das primeiras galáxias já formadas.</p>
+      <br> <br>
+        <hr class="d-sm-none">
+      </div>
+      <div class="col-sm-8">
+        <h2>Quinteto de Stephan</h2>
+        <h5>Fotos do Quinteto de Stephan</h5>
+      <p align= center><img src="img/Quinteto de stephan.jpg" width="600" height="600"></p>
+        <p>O quinteto foi descoberto pelo astrônomo francês Édouard Stephan, em 1877, e fotografado pelo Hubble há alguns anos. Contudo, a tecnologia de infravermelho usada no JWST permite capturar imagens espaciais em alta resolução, apresentando detalhes que nunca foram vistos até então.</p>
+        <p>A imagem do grupo de galáxias contém mais de 15 milhões de pixels e foi construída a partir de mil arquivos diferentes<br> foto é considerada a maior de Webb até o momento. Os detalhes apresentam caudas de gás, poeira estelar, aglomerados de milhões de estrelas jovens, cinco galáxias cintilantes, entre outras composições do espaço.</p>
+        <h2 class="mt-5">Galáxia Cartwheel</h2>
+        <h5>Foto da Galáxia Cartwheel</h5>
+        <div><img src="img/galáxia Cartwheel.jpg"></div>
+        <p>Galáxias com conformação de anéis, como essa, são muito mais raras do que as espiraladas, como a nossa Via Láctea. O James Webb registrou o objeto cósmico com dois equipamentos diferentes: a câmera de infravermelho próximo (NIRCam) e infravermelho médio (MIRI).</p>
+        <P>Também chamada de Roda de Carroça ou ESO 350-40, a galáxia tem um formato curioso. No seu centro está localizado um anel menor, circundado por outro bem maior de 150 mil anos-luz de diâmetro.</P>
+  <br>
+        <p>Essa figura é o resultado de uma colisão em alta velocidade com outra galáxia, que ocorreu há cerca de 200 milhões de anos atrás. O evento transformou profundamente a posição das estrelas ao redor do buraco negro central de Cartwheel.</p>
+    
+        <p>As fotografias fornecem informações para cientistas interessados em investigar as origens desse conjunto inusitado de estrelas. É possível ver, por exemplo, o núcleo brilhante que indica a zona de formação das estrelas mais jovens do sistema.</p>
+      </div>
+    </div>
+  </div>
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/1s.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3>Nebulosa de Carina</h3>
+          <p>é uma brilhante nebulosa que tem dentro de seus limites vários aglomerados abertos de estrelas relativos</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/2s.jpg" alt="Nebulosa do Anel do Sul" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3>Nebulosa do Anel do Sul</h3>
+          <p>Anel do Sul é uma nebulosa localizada a cerca de 2 mil anos-luz de nós. Ela foi descoberta em 1835 pelo astrônomo John Herschel usando um telescópio refletor com abertura de 18,6 polegadas.</p>
+        </div> 
+      </div>
+      <div class="carousel-item">
+        <img src="img/3s.jpg" alt="James webb" class="d-block" style="width:100%">
+        <div class="carousel-caption">
+          <h3>James webb</h3>
+          <p>untando as forças de 14 países, o Telescópio James Webb foi desenvolvido com o apoio e o investimento da NASA (Estados Unidos), que dirigiu o projeto; da ESA (Europa), que forneceu sistema de infravermelho e o foguete em sua base de lançamento; e da CSA (Canadá), que ofereceu sistema de infravermelho e o sensor responsável pela criação das imagens coletadas.</p>
+        </div>  
+      </div>
+    </div>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <div>
+  <footer>
+    <br>
+    <h1>Astro&Cosmo </h1>
+    <br>
+    <div>
+      <ul class="menu">
+        <li class="menu">
+          <a class="menulia" href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" width="50px" height="50px"></a>
+        </li>
+        <li class="menu">
+          <a class="menulia" href="https://www.twitter.com" target="_blank"><img src="img/twitter.png" width="60px" height="60px"></a>
+        </li>
+        <li class="menu">
+          <a class="menulia" href="https://www.facebook.com" target="_blank"><img src="img/facebook.png" width="40px" height="40px"></a>
+        </li>
+        <li class="menu">
+          <a class="menulia" href="https://www.youtube.com" target="_blank"><img src="img/youtube.png" width="50px" height="50px"></a> 
+        </li>
+        <li class="menu">
+          <a class="menulia" href="https://www.discord.com" target="_blank"><img src="img/discord.png" width="60px" height="60px"></a> 
+        </li>
+        <li class="menu">
+          <a class="menulia" href="https://www.whatsapp.com/?lang=pt_br" target="_blank"><img src="img/whatsapp.png" width="50px" height="50px"></a> 
+        </li>
+      </ul>
+    </div>
+    <br>
+    <div>
+      <ul class="menu">
+        <li class="menu">
+          <a class="menuliaa" href="#">Home</a>
+        </li>
+        <li class="menu">
+          <a class="menulia" href="#">Politicas de privacidade</a>
+        </li>
+        <li class="menu">
+          <a class="menulia" href="#">Contato</a>
+        </li>
+        <li class="menu">
+          <a class="menulia" href="#">Sobre nós</a> 
+        </li>
+      </ul>
+    </div>
+    <br>
+    </div>
+  </footer>
+  <p align="center" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">© 2023 - Todos os direitos reservados.</p>
+</body>
+</html>
